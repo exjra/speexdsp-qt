@@ -7,8 +7,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 DEFINES += HAVE_CONFIG_H
 
-LIBS += -LE:/Projects/lib/speex/win32/lib -lspeex
-INCLUDEPATH += E:/Projects/lib/speex/win32/include
+LIBS += -L$$PWD/../speex-qt -lspeex
+INCLUDEPATH += $$PWD/../speex-qt/include
 
 INCLUDEPATH += $$PWD/include
 
@@ -47,3 +47,5 @@ HEADERS += \
         $$PWD/include/speex/speex_preprocess.h \
         $$PWD/include/speex/speex_resampler.h \
         $$PWD/include/speex/speex_types.h
+
+DESTDIR = $$PWD
