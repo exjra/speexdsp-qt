@@ -48,4 +48,10 @@ HEADERS += \
         $$PWD/include/speex/speex_resampler.h \
         $$PWD/include/speex/speex_types.h
 
-DESTDIR = $$PWD
+win32 {
+    DESTDIR = $$PWD
+}
+
+android {
+    DESTDIR = $$PWD/android
+}

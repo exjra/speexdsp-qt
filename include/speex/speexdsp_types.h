@@ -117,6 +117,12 @@
    typedef int spx_int32_t;
    typedef unsigned int spx_uint32_t;
 
+#elif defined(__ANDROID__)
+/* Android GCC */
+typedef signed short spx_int16_t;
+typedef unsigned short spx_uint16_t;
+typedef signed int spx_int32_t;
+typedef unsigned int spx_uint32_t;
 #else
 
 #include "speexdsp_config_types.h"
